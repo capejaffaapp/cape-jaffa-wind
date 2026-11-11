@@ -1,0 +1,24 @@
+{
+  "name": "Cape Jaffa Marine Fishing Planner",
+  "short_name": "Cape Jaffa Wind",
+  "description": "Cape Jaffa wind and fishing weather planner",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#081724",
+  "theme_color": "#081724",
+  "icons": [
+    {
+      "src": "./icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
