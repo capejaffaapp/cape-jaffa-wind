@@ -1,36 +1,28 @@
-
 name: Update Cape Jaffa BOM observations
-
 on:
   workflow_dispatch:
   schedule:
     - cron: '7,37 * * * *'
-
 permissions:
   contents: write
-
 jobs:
   update:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-
       - name: Fetch Cape Jaffa observations
         run: python scripts/update_bom.py
-
-      - name: Commit updated observations
+      - name: Commit observation archive
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add observations.json
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/cape-jaffa-observations.json
           if ! git diff --cached --quiet; then
-            git commit -m "Update Cape Jaffa BOM observations"
+            git commit -m 'Update Cape Jaffa measured observations'
             git push
           fi
