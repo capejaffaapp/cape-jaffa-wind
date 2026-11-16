@@ -2,7 +2,7 @@
   "station_id": "026095",
   "station_name": "Cape Jaffa (The Limestone)",
   "source": "https://www.bom.gov.au/fwo/IDS60801/IDS60801.94813.json",
-  "collected_at_utc": "2026-11-16T02:54:26Z",
+  "collected_at_utc": "2026-11-16T04:10:17Z",
   "observations": [
     {
       "time_utc": "2026-11-09T01:30:00Z",
@@ -2404,6 +2404,27 @@
       "gust_kn": 17.0,
       "direction": "SSW",
       "pressure_hpa": 1023.8
+    },
+    {
+      "time_utc": "2026-11-16T03:00:00Z",
+      "wind_kn": 14.0,
+      "gust_kn": 19.0,
+      "direction": "SSW",
+      "pressure_hpa": 1023.4
+    },
+    {
+      "time_utc": "2026-11-16T03:30:00Z",
+      "wind_kn": 14.0,
+      "gust_kn": 19.0,
+      "direction": "SSW",
+      "pressure_hpa": 1023.2
+    },
+    {
+      "time_utc": "2026-11-16T04:00:00Z",
+      "wind_kn": 16.0,
+      "gust_kn": 21.0,
+      "direction": "SSW",
+      "pressure_hpa": 1022.7
     }
   ]
 }
